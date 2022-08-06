@@ -1,0 +1,29 @@
+weeklyGames: true # change to false if your season runs almost daily
+dates: 
+  start: 2022-10-28
+  gapBetweenGames: 1 # in days
+  gapBetweenWeeks: 7 # each "game week" will be this amount of days apart
+games: 
+  perTeam: 16
+teams: 
+  - 
+    arena: "Delta Forum"
+    name: "Detroit Red Wings"
+    shortcode: DET
+  - 
+    arena: "Enterprise Arena"
+    name: "Columbus Blue Jackets"
+    shortcode: CBJ
+  - 
+    arena: "Scotiabank Place"
+    name: "Atlanta Flames"
+    shortcode: ATL
+  # - 
+  #   name: "Dallas Stars"
+  #   shortcode: "DAL"
+  #   arena: "Delta Forum"
+  # - 
+  #   name: "Milwaukee Huskies"
+  #   shortcode: "MIL"
+  #   arena: "Enterprise Arena"
+
