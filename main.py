@@ -49,7 +49,6 @@ for x in range(0, int(gamesPerOpp)):
 
     gameDate = weekStartDate
 
-    
     for x in range(0, len(weekMatches)):
         matchInfo = {}
         match = weekMatches[x]
@@ -90,7 +89,7 @@ for match in seasonMatches:
     print(f"{match['date']}: {match['away']['shortcode']} @ {match['home']['shortcode']}")
 
 for team in validation:
-    if not (validation[team]["awayCounts"] + validation[team]["homeCounts"]):
+    if not ((validation[team]["awayCounts"] + validation[team]["homeCounts"]) == config["games"]["perTeam"]):
         Exception(f"{team} has an improper number of games!")
         exit(1)
 
