@@ -90,7 +90,7 @@ for match in seasonMatches:
     print(f"{match['date']}: {match['away']['shortcode']} @ {match['home']['shortcode']}")
 
 for team in validation:
-    if not (validation[team]["awayCounts"] + validation[team]["homeCounts"]):
+    if not ((validation[team]["awayCounts"] + validation[team]["homeCounts"]) == config["games"]["perTeam"]):
         Exception(f"{team} has an improper number of games!")
         exit(1)
 
